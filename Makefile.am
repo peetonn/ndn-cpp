@@ -43,7 +43,7 @@ noinst_PROGRAMS = bin/test-channel-discovery bin/test-chrono-chat \
   bin/test-echo-consumer bin/test-echo-consumer-lite \
   bin/test-encode-decode-benchmark bin/test-encode-decode-data \
   bin/test-encode-decode-fib-entry bin/test-encode-decode-interest \
-  bin/test-generalized-content bin/test-get-async bin/test-get-async-threadsafe \
+  bin/test-generalized-content bin/test-annotations-example bin/test-get-async bin/test-get-async-threadsafe \
   bin/test-list-channels bin/test-list-faces bin/test-list-rib \
   bin/test-prefix-discovery \
   bin/test-publish-async-nfd bin/test-publish-async-nfd-lite \
@@ -430,6 +430,9 @@ bin_test_encode_decode_interest_LDADD = libndn-cpp.la
 
 bin_test_generalized_content_SOURCES = examples/test-generalized-content.cpp
 bin_test_generalized_content_LDADD = libndn-cpp.la libndn-cpp-tools.la
+
+bin_test_annotations_example_SOURCES = examples/test-annotations-example.cpp
+bin_test_annotations_example_LDADD = libndn-cpp.la libndn-cpp-tools.la
 
 bin_test_get_async_SOURCES = examples/test-get-async.cpp
 bin_test_get_async_LDADD = libndn-cpp.la
