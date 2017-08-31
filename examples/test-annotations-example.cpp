@@ -34,6 +34,9 @@
 #include <ndn-cpp-tools/usersync/generalized-content.hpp>
 #include <execinfo.h>
 #include <set>
+#include <ctime>
+#include <signal.h>
+#include <cassert>
 
 #define RUN_FOREVER
 
